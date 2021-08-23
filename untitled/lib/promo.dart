@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'premium.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: EquipoPre(),
+    home: listpromo(),
 
   ));
 }
 
-class EquipoPre extends StatefulWidget {
-  const EquipoPre({Key? key}) : super(key: key);
+class listpromo extends StatefulWidget {
+  const listpromo({Key? key}) : super(key: key);
 
   @override
-  _EquipoPreState createState() => _EquipoPreState();
+  _listpromoState createState() => _listpromoState();
 }
 
-class _EquipoPreState extends State<EquipoPre> {
+class _listpromoState extends State<listpromo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,9 +45,9 @@ class _EquipoPreState extends State<EquipoPre> {
               child: Column(
                 children: [
                   Text('GOLD BIKE:',
-                     style: TextStyle(color: Colors.deepOrange),),
+                    style: TextStyle(color: Colors.deepOrange),),
                   Text('Equipo premium, especial para uso todo terreno,'
-                      , style: TextStyle(color: Colors.deepOrange),),
+                    , style: TextStyle(color: Colors.deepOrange),),
                   Text('material del equipo de aluminio reforzado y...  ',
                     style: TextStyle(color: Colors.deepOrange),),
                   RaisedButton(
@@ -142,7 +143,7 @@ class _EquipoPreState extends State<EquipoPre> {
                     child: Text('COMPRAR FIRE PRO BIKE'),
                     color: Colors.deepOrange,
                   ),
-                  
+
                 ],
               ),
             ),
@@ -152,4 +153,3 @@ class _EquipoPreState extends State<EquipoPre> {
     );
   }
 }
-

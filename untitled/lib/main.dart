@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'premium.dart';
+import 'family.dart';
+import 'promo.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,6 +23,7 @@ class _PgnIniState extends State<PgnIni> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Mundo De Las Bicicletas '),
+        centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
       backgroundColor: Colors.black,
@@ -29,8 +33,11 @@ class _PgnIniState extends State<PgnIni> {
           children: [
             Image.asset('img/uno.jfif', width: 500,height: 150,),
             RaisedButton(
-              onPressed: () {  },
-              child: Text('Promocion de la semana'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> listpromo(), ),);
+
+              },
+              child: Text('Promocion Del Dia'),
               color: Colors.deepOrange,
             ),
 
@@ -38,13 +45,21 @@ class _PgnIniState extends State<PgnIni> {
                 'img/bicipremium.jfif', width: 500,height: 150,),
 
             RaisedButton(
-              onPressed: () {  },
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> EquipoPre(), ),);
+
+              },
               child: Text('Equipo Premium'),
               color: Colors.deepOrange,
             ),
+
+
             Image.asset('img/familyversion.jfif', width: 500,height: 150,),
             RaisedButton(
-              onPressed: () {  },
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> listfam(), ),);
+
+              },
               child: Text('Family version'),
               color: Colors.deepOrange,
             ),

@@ -52,6 +52,11 @@ flutter:
     - img/uno.jfif
     - img/familyversion.jfif
     - img/bicipremium.jfif
+    - img/greenpro.jfif
+    - img/carrera.jfif
+    - img/faminino.jfif
+    - img/tudo.jfif
+    - img/velocid.jfif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
