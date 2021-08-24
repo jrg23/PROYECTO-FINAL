@@ -25,9 +25,9 @@ class _PgnIniState extends State<PgnIni> {
       appBar: AppBar(
         title: Text('Mundo De Las Bicicletas '),
         centerTitle: true,
-        backgroundColor: Colors.lightGreenAccent,
+        backgroundColor: Colors.deepOrange,
       ),
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: Colors.black,
       body: Container(
         margin: EdgeInsets.all(10.0),
         child: Column(
@@ -39,7 +39,7 @@ class _PgnIniState extends State<PgnIni> {
 
               },
               child: Text('Forma parte de nuestra familia'),
-              color: Colors.green,
+              color: Colors.deepOrange,
             ),
 
             Image.asset(
@@ -51,7 +51,7 @@ class _PgnIniState extends State<PgnIni> {
 
               },
               child: Text('Equipo Premium'),
-              color: Colors.green,
+              color: Colors.deepOrange,
             ),
 
 
@@ -62,7 +62,7 @@ class _PgnIniState extends State<PgnIni> {
 
               },
               child: Text('Family version'),
-              color: Colors.green,
+              color: Colors.deepOrange,
             ),
 
 

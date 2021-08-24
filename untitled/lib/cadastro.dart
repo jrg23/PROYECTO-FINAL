@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
-        backgroundColor: Colors.lightGreenAccent,
+        backgroundColor: Colors.deepOrange,
         appBar: AppBar(
-          backgroundColor: Colors.lightGreen,
+          backgroundColor: Colors.deepOrangeAccent,
           title: Text(appTitle),
         ),
         body: MyCustomForm(),
