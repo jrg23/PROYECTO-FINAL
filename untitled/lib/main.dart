@@ -32,7 +32,15 @@ class _PgnIniState extends State<PgnIni> {
         margin: EdgeInsets.all(10.0),
         child: Column(
           children: [
-            Image.asset('img/uno.jfif', width: 500,height: 150,),
+
+            new ClipRRect(
+              borderRadius: new BorderRadius.circular(20.0),
+              child: Image.asset(
+                'img/uno.jfif',height: 150,
+              ),
+            ),
+
+
             RaisedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> MyApap(), ),);
@@ -41,10 +49,16 @@ class _PgnIniState extends State<PgnIni> {
               child: Text('Forma parte de nuestra familia'),
               color: Colors.deepOrange,
             ),
+            Container(
+              padding: EdgeInsets.all(10.0),
+            ),
 
-            Image.asset(
-                'img/bicipremium.jfif', width: 500,height: 150,),
+            new ClipRRect(
+              borderRadius: new BorderRadius.circular(20.0),
+              child: Image.asset(
+                'img/bicipremium.jfif', height: 150,),
 
+            ),
             RaisedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> EquipoPre(), ),);
@@ -55,7 +69,12 @@ class _PgnIniState extends State<PgnIni> {
             ),
 
 
-            Image.asset('img/familyversion.jfif', width: 500,height: 150,),
+            new ClipRRect(
+              borderRadius: new BorderRadius.circular(20.0),
+              child: Image.asset(
+                'img/familyversion.jfif',height: 150,
+              ),
+            ),
             RaisedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> listfam(), ),);
