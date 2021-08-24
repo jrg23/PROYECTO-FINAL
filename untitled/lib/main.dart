@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'premium.dart';
 import 'family.dart';
 import 'promo.dart';
+import 'primercadastro.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -24,9 +25,9 @@ class _PgnIniState extends State<PgnIni> {
       appBar: AppBar(
         title: Text('Mundo De Las Bicicletas '),
         centerTitle: true,
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.lightGreenAccent,
       ),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.lightGreen,
       body: Container(
         margin: EdgeInsets.all(10.0),
         child: Column(
@@ -34,11 +35,11 @@ class _PgnIniState extends State<PgnIni> {
             Image.asset('img/uno.jfif', width: 500,height: 150,),
             RaisedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> listpromo(), ),);
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> MyApap(), ),);
 
               },
-              child: Text('Promocion Del Dia'),
-              color: Colors.deepOrange,
+              child: Text('Forma parte de nuestra familia'),
+              color: Colors.green,
             ),
 
             Image.asset(
@@ -50,7 +51,7 @@ class _PgnIniState extends State<PgnIni> {
 
               },
               child: Text('Equipo Premium'),
-              color: Colors.deepOrange,
+              color: Colors.green,
             ),
 
 
@@ -61,7 +62,7 @@ class _PgnIniState extends State<PgnIni> {
 
               },
               child: Text('Family version'),
-              color: Colors.deepOrange,
+              color: Colors.green,
             ),
 
 

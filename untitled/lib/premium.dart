@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'comprabikegold.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -51,7 +52,7 @@ class _EquipoPreState extends State<EquipoPre> {
                     style: TextStyle(color: Colors.deepOrange),),
                   RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> EquipoPre(), ),);
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> pagCompra(), ),);
 
                     },
                     child: Text('COMPRAR GOLD BIKE'),
